@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection niveau de jeu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="flex justify-center items-center h-screen bg-gray-800">
+        <div class="flex-row">
+            <div class="flex justify-center items-center text-4xl p-8">
+                <h1 class="text-gray-50">Choisissez un niveau de difficulté :</h1>
+            </div>
+            <div class="flex justify-center items-center">
+                <form action="/select" method="POST" class="columns-3 gap-20">
+                    <div>
+                        <button
+                            class="w-48 p-4 bg-lime-600 hover:bg-lime-700 rounded text-sm font-bold text-gray-50 transition duration-200"
+                            type="submit" name="buton_select" value="Facile">Facile</button>
+                    </div>
+                    <div>
+                        <button
+                            class="w-48 p-4 bg-orange-600 hover:bg-orange-700 rounded text-sm font-bold text-gray-50 transition duration-200"
+                            type="submit" name="buton_select" value="Normal">Normal</button>
+                    </div>
+                    <div>
+                        <button
+                            class="w-48 p-4 bg-red-600 hover:bg-red-700 rounded text-sm font-bold text-gray-50 transition duration-200"
+                            type="submit" name="buton_select" value="Difficile">Difficile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
